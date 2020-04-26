@@ -1,0 +1,863 @@
+/*----------------------------------------------------
+@File: Default Styles
+@Author: Colorlib
+@URL:https://colorlib.com
+
+This file contains the styling for the actual theme, this
+is the file you need to edit to change the look of the
+theme.
+
+This files contents are outlined below.
+
+	1. Variables
+	2. Prefix
+	3. header
+	4. Slider
+    5. Builder
+    6. About
+    7. Offer
+    8. Feature
+    9. Services
+    10. Team
+    11. Achievments
+    12. Testimonial
+    13. Gallery
+    14. Blog
+    15. Call
+    16. Construction
+    17. Min-blog
+    18. 404
+    19. Contact
+    20. Footer
+    21. Responsive
+
+
+----------------------------------------------------*/
+
+/*--------------------------------------------------*/
+
+@import url("https://fonts.googleapis.com/css?family=Oswald:300,400,700|Roboto:300,300i,400,400i,500,500i,700,700i");
+
+/*Color Variables*/
+
+::selection {
+  background-color: #f8b81d;
+  color: #ffffff;
+}
+
+/* Button */
+
+.button_all {
+  font: 700 18px/59px "Roboto", sans-serif;
+  width: 180px;
+  text-align: center;
+  background: #f6b60b;
+  display: block;
+  border: 0;
+  color: #222222;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 2;
+  padding: 0;
+}
+
+.button_all:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: #222222;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  right: 0;
+  transform: scaleY(0);
+  transform-origin: 50%;
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+.button_all:hover,
+.button_all:focus {
+  color: #fff !important;
+}
+
+.button_all:hover:before,
+.button_all:focus:before {
+  transform: scaleY(1);
+}
+
+/* Section Title*/
+
+.tittle {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.tittle h2 {
+  font: 400 24px "Oswald", sans-serif;
+  color: #222222;
+  padding-top: 90px;
+  position: relative;
+}
+
+.tittle h2:after {
+  content: "";
+  position: absolute;
+  background: #f6b60b;
+  height: 5px;
+  width: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -30px;
+}
+
+.tittle h4 {
+  font: 400 14px "Roboto", sans-serif;
+  color: #555555;
+  padding-top: 55px;
+}
+
+/* Subtittle */
+
+.subtittle h2 {
+  font: 700 36px "Roboto", sans-serif;
+  color: #222222;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.subtittle h2:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 80px;
+  background: #222222;
+  left: 0;
+  bottom: -22px;
+}
+
+.subtittle h5 {
+  font: 400 14px "Roboto", sans-serif;
+  color: #555555;
+  padding-top: 22px;
+}
+
+/* Preloader */
+
+.preloader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  background-color: #ffffff;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url(../images/preloader.gif);
+}
+
+/*--------------------------------------------------*/
+
+/*Prefix Styles*/
+
+.m0 {
+  margin: 0;
+}
+
+.p0 {
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  /*Section Fix*/
+}
+
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  margin: 0;
+}
+
+body p {
+  font-family: "Roboto", sans-serif;
+  line-height: 26px;
+  color: #555555;
+  margin: 0;
+}
+
+body section.row,
+body header.row,
+body footer.row {
+  margin: 0;
+}
+
+/*Ancore*/
+
+a,
+.btn,
+button {
+  outline: none;
+  transition: all 300ms linear 0s;
+}
+
+a:before,
+a:after,
+.btn:before,
+.btn:after,
+button:before,
+button:after {
+  transition: all 300ms linear 0s;
+}
+
+a:focus,
+a:hover,
+.btn:focus,
+.btn:hover,
+button:focus,
+button:hover {
+  outline: none;
+  text-decoration: none;
+  transition: all 300ms linear 0s;
+}
+
+/*--------------------------------------------------*/
+
+.NITH h2 {
+  font-size: 200%;
+}
+.NIT h1 {
+  color: #fff;
+  font-weight: 800;
+  font-size: 250%;
+  font-family: Century Gothic;
+}
+
+.NITLOGo img {
+  margin-left: -3%;
+}
+
+/*@media (max-width: 480px) {
+
+  .NIT{
+    display: flex;
+    justify-content: end;
+  }
+  .t{
+    width: 200px;
+    justify-self: end;
+  }
+}*/
+
+
+@media (max-width: 768px) {
+  .container-fluid {
+    padding-top: 3em;
+  }
+
+  .NITLOGo img {
+    text-align: start;
+    width: 90px;
+    height: 90px;
+    margin-top: -7%;
+    margin-left: -5%;
+  }
+  .NITH h2 {
+    opacity: 1;    font-size: 1.1rem;
+    margin-top: 3%;
+
+    text-align: end;
+  }
+  .NIT h1 {
+    font-size: 1.1rem;
+    margin-top: 5%;
+    padding-top: 2em;
+    text-align: end;
+  }
+  .marquee marquee {
+    margin-top: 10%;
+  }
+
+  .slider_inner {
+    margin-top: -33%;
+    /*padding-top: -10%*/
+  }
+  .top_header_area {
+    display: none;
+  }
+  .header_aera .navbar {
+    background-color: #111f29;
+  }
+   .header_aera
+  {
+    background-color: green;
+  }
+ 
+}
+
+/* Top header */
+
+.top_header_area {
+  background: #111f29;
+}
+
+.top_header_area .top_nav li a {
+  font: 400 14px/50px "Roboto", sans-serif;
+  color: #fff;
+  padding: 0;
+  padding-left: 30px;
+}
+
+.top_header_area .top_nav li a i {
+  color: #f6b60b;
+  font-size: 18px;
+  padding-right: 10px;
+}
+
+.top_header_area .top_nav li a:hover,
+.top_header_area .top_nav li a:focus {
+  background-color: transparent;
+  color: #f6b60b;
+}
+
+.top_header_area .top_nav li:first-child a {
+  padding: 0;
+}
+
+.top_header_area .social_nav {
+  margin: 0;
+  padding-top: 12px;
+}
+
+.top_header_area .social_nav li a {
+  font-size: 14px;
+  color: #fff;
+  padding: 0;
+  text-align: center;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.top_header_area .social_nav li a i {
+  line-height: 24px;
+}
+
+.top_header_area .social_nav li a:hover,
+.top_header_area .social_nav li a:focus {
+  background: #f6b60b;
+  color: #111f29;
+}
+
+/* End Top header */
+
+.container-fluid {
+  background-color: #111f29;
+  max-height: 150px;
+  height: 100%;
+}
+
+.NIT {
+  text-align: center;
+  text-shadow: black;
+  /* color: green; */
+  font-size: 14px;
+  position: relative;
+  top: -120px;
+  left: 2px;
+}
+
+.NITH {
+  text-align: center;
+  margin-top: 2%;
+  text-decoration: #38e8df;
+  position: relative;
+  top: -120px;
+}
+
+.NITLOGo {
+  margin-left: 5%;
+  margin-top: 0.25%;
+}
+
+/* Top header 2 */
+
+.top_header_area.top_header {
+  background-color: transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.top_header_area.top_header .right_top_header {
+  background: #111f29;
+  display: block;
+  overflow: hidden;
+  padding-left: 20px;
+}
+
+.top_header_area.top_header .right_top_header:after {
+  content: "";
+  position: relative;
+  right: 0;
+  width: 50%;
+  background: #111f29;
+  height: 50px;
+  z-index: -1;
+}
+
+/* End Top header 2 */
+
+/* Header Aera */
+
+.header_aera {
+  background: #111f29;
+  border-radius: 0;
+  border: 0;
+  margin: 0;
+  width: 100%;
+  z-index: 99;
+  top: 0;
+  /*box-shadow: 0px 0px 20px 0px rgba(21, 47, 95, 0.2);*/
+}
+
+.header_aera .searchForm {
+  height: 0;
+  overflow: hidden;
+  transition: all 300ms linear 0s;
+}
+
+.header_aera .searchForm .input-group-addon {
+  border-radius: 0;
+  border: none;
+  font-size: 14px;
+  padding: 0 45px;
+  background: #f6b60b;
+  color: #fff;
+  cursor: pointer;
+}
+
+.header_aera .searchForm .form-control {
+  height: 79px;
+  padding: 0 15px;
+  border-radius: 0;
+  border: none;
+  color: #fff;
+  background: #888782;
+  text-align: center;
+  font: 400 16px "Roboto", sans-serif;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.header_aera .searchForm .form-control.placeholder {
+  font: 400 16px "Roboto", sans-serif;
+  color: #fff;
+}
+
+.header_aera .searchForm .form-control:-moz-placeholder {
+  font: 400 16px "Roboto", sans-serif;
+  color: #fff;
+}
+
+.header_aera .searchForm .form-control::-webkit-input-placeholder {
+  font: 400 16px "Roboto", sans-serif;
+  color: #fff;
+}
+
+.header_aera .show {
+  height: 80px;
+  border-bottom: 1px solid transparent;
+}
+
+.header_aera .navbar-header .navbar-brand {
+  padding-top: 39px;
+}
+
+.header_aera .navbar-header .navbar-brand img {
+  max-width: 100%;
+}
+
+.header_aera .navbar-collapse .navbar-nav.navbar-right li a {
+  font: 700 14px/100px "Roboto", sans-serif;
+  color: #222222;
+  text-transform: uppercase;
+  padding: 0;
+  padding-left: 30px;
+}
+
+.header_aera .navbar-collapse .navbar-nav.navbar-right li a:hover,
+.header_aera .navbar-collapse .navbar-nav.navbar-right li a:focus {
+  color: #f6b60b;
+}
+
+.header_aera .navbar-collapse .navbar-nav.navbar-right li .nav_searchFrom {
+  width: 100px;
+  background: #f6b60b;
+  color: #fff;
+  padding: 0;
+  text-align: center;
+  margin-left: 15px;
+}
+
+.header_aera .navbar-collapse .navbar-nav.navbar-right li .nav_searchFrom:hover,
+.header_aera
+  .navbar-collapse
+  .navbar-nav.navbar-right
+  li
+  .nav_searchFrom:focus {
+  color: #222222;
+}
+
+@media (min-width: 768px) {
+  .header_aera
+    .navbar-collapse
+    .navbar-nav.navbar-right
+    li.submenu
+    .other_dropdwn {
+    margin-right: -122px;
+  }
+}
+
+.header_aera .navbar-collapse .navbar-nav.navbar-right li.submenu ul {
+  border: none;
+  box-shadow: none;
+  border-radius: 0px;
+  min-width: 190px;
+  transition: all 500ms ease-in-out;
+  background: #f6b60b;
+}
+
+@media (min-width: 768px) {
+  .header_aera .navbar-collapse .navbar-nav.navbar-right li.submenu ul {
+    margin-right: -150px;
+    display: block;
+    transform: rotateX(-90deg);
+    transform-origin: top;
+  }
+}
+
+.header_aera .navbar-collapse .navbar-nav.navbar-right li.submenu ul li {
+  display: block;
+}
+
+.header_aera .navbar-collapse .navbar-nav.navbar-right li.submenu ul li a {
+  line-height: normal;
+  font: 700 14px / normal "Roboto", sans-serif;
+  padding: 12px 8px;
+  display: block;
+}
+
+.header_aera .navbar-collapse .navbar-nav.navbar-right li.submenu ul:before {
+  content: "";
+  width: 100%;
+  height: 5px;
+  background: #222222;
+  position: absolute;
+  top: 0px;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition: all 800ms ease-in-out;
+}
+
+.header_aera .navbar-collapse .navbar-nav.navbar-right li.submenu ul:after {
+  content: "";
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  bottom: 0px;
+  background: #222222;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  transform: scaleX(0);
+  transform-origin: 100% 50%;
+  transition: all 800ms ease-in-out;
+}
+
+@media (min-width: 768px) {
+  .header_aera .navbar-collapse .navbar-nav.navbar-right li:hover.submenu ul {
+    transform: rotateX(0deg);
+  }
+  .header_aera
+    .navbar-collapse
+    .navbar-nav.navbar-right
+    li:hover.submenu
+    ul:before {
+    transform: scaleX(1);
+  }
+  .header_aera
+    .navbar-collapse
+    .navbar-nav.navbar-right
+    li:hover.submenu
+    ul:after {
+    transform: scaleX(1);
+  }
+}
+
+/* End Header Aera */
+
+/* End header area 2 */
+
+/* ------------navbar------------- */
+
+/* The Overlay (background) */
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 2000; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(0,0,0); /* Black fallback color */
+  background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+/*To Seperate navbar and header */
+/* .navbar{
+	margin-top: 40px;
+} */
+/*To change the color of navbar links*/
+.navbar-light .navbar-nav .nav-link{
+	color:black;
+
+}
+/*To change the color of heading is overlay*/
+.overlay-content h1{
+	color: #FF4136;
+}
+ul
+  {
+    list-style-type: none;
+  }
+
+/* -------------footer ---- */
+.footer_area {
+    background: url("../images/footer.jpg") no-repeat;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    padding-top: 20px;
+  }
+  .footer_area:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    z-index: -1;
+  }
+  
+  .footer_area h1{
+    text-align: center;
+    font: 400 25px "Oswald", sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  .footer_area .footer_row {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+  .footer_area .footer_row .footer_about {
+    padding-bottom: 20px;
+  }
+  .footer_area .footer_row .footer_about h2 {
+    font: 400 18px "Oswald", sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    padding-bottom: 25px;
+  }
+  .footer_area .footer_row .footer_about img {
+    max-width: 100%;
+  }
+  .footer_area .footer_row .footer_about p {
+    font: 400 14px/26px "Oswald", sans-serif;
+    color: #fefefe;
+    padding-top: 22px;
+  }
+  .footer_area .footer_row .footer_about .socail_icon {
+    padding: 0;
+    margin: 0;
+    padding-top: 25px;
+  }
+  .footer_area .footer_row .footer_about .socail_icon li {
+    display: inline-block;
+    list-style: none;
+    padding-left: 8px;
+  }
+  .footer_area .footer_row .footer_about .socail_icon li:first-child {
+    padding: 0;
+  }
+  .footer_area .footer_row .footer_about .socail_icon li a {
+    border: 2px solid #f6b60b;
+    display: block;
+    line-height: 26px;
+    width: 30px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+  .footer_area .footer_row .footer_about .socail_icon li a:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: #f6b60b;
+    z-index: -1;
+    transform: scaleY(0);
+    transform-origin: 50%;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+  }
+  .footer_area .footer_row .footer_about .socail_icon li i {
+    font-size: 14px;
+    color: #fff;
+    display: inline-block;
+    padding-top: 7px;
+  }
+  .footer_area .footer_row .footer_about .socail_icon li a:hover:after, .footer_area .footer_row .footer_about .socail_icon li a:focus:after {
+    transform: scaleY(1);
+  }
+  .footer_area .footer_row .footer_about .quick_link {
+    padding: 0;
+    margin: 0;
+  }
+  .footer_area .footer_row .footer_about .quick_link li {
+    list-style: none;
+  }
+  .footer_area .footer_row .footer_about .quick_link li a {
+    font: 50 11px/24px "Roboto", sans-serif;
+    color: #fefefe;
+    position: relative;
+    padding-left: 30px;
+  }
+  .footer_area .footer_row .footer_about .quick_link li i {
+    font-size: 14px;
+    color: #f6b60b;
+    padding-right: 20px;
+    left: 0;
+    bottom: 0;
+    transition: all 300ms linear 0s;
+    z-index: 200;
+  }
+  .footer_area .footer_row .footer_about .quick_link li a:hover, .footer_area .footer_row .footer_about .quick_link li a:focus {
+    color: #f6b60b;
+  }
+  .footer_area .footer_row .footer_about .quick_link li a:hover i, .footer_area .footer_row .footer_about .quick_link li a:focus i {
+    left: 8px;
+  }
+  .footer_area .footer_row .footer_about .twitter {
+    font: 400 14px/28px "Roboto", sans-serif;
+    color: #fefefe;
+    display: block;
+    padding-bottom: 15px;
+  }
+  .footer_area .footer_row .footer_about .twitter:hover, .footer_area .footer_row .footer_about .twitter:focus {
+    color: #f6b60b;
+  }
+  .footer_area .footer_row .footer_about address p {
+    font: 400 14px/28px "Roboto", sans-serif;
+    color: #fff;
+    padding: 0;
+  }
+  .footer_area .footer_row .footer_about address .my_address {
+    padding: 0;
+    margin: 0;
+    padding-top: 15px;
+  }
+  .footer_area .footer_row .footer_about address .my_address li {
+    list-style: none;
+  }
+  .footer_area .footer_row .footer_about address .my_address li a {
+    font: 400 14px/28px "Roboto", sans-serif;
+    color: #fff;
+  }
+  .footer_area .footer_row .footer_about address .my_address li a i {
+    color: #f6b60b;
+    padding-right: 20px;
+    font-size: 14px;
+    display: inline-block;
+  }
+  .footer_area .footer_row .footer_about address .my_address li a:hover, .footer_area .footer_row .footer_about address .my_address li a:focus {
+    color: #f6b60b;
+  }
+  .footer_area .footer_row .footer_about address .my_address li span {
+    display: inline-block;
+    padding-left: 35px;
+    margin-top: -30px;
+  }
+  .footer_area .copyright_area {
+    background: #090909;
+    font: 400 14px/100px "Roboto", sans-serif;
+    color: #fefefe;
+    text-align: center;
+  }
+  .footer_area .copyright_area a {
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #f6b60b;
+  }
+  .footer_area .copyright_area a:hover, .footer_area .copyright_area a:focus {
+    color: #fefefe;
+  }
+  
