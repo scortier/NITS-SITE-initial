@@ -714,6 +714,16 @@ ul
     padding-top: 50px;
     padding-bottom: 30px;
   }
+  .footer_area .row{
+    margin-left: -120px !important;
+    margin-right: -120px !important;
+  }
+  @media screen and (max-width: 893px){
+    .footer_area .row{
+      margin-left: -15px !important;
+      margin-right: -15px !important;
+    }
+  }
   .footer_area .footer_row .footer_about {
     padding-bottom: 20px;
   }
